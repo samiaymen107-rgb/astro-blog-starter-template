@@ -1,50 +1,75 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
-
 <!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
+<html lang="ar" dir="rtl">
+<head>
+  <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  <meta name="theme-color" content="#0b1220" />
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="/">AYHEM<span>Σ</span></a>
+  <nav aria-label="التنقل الرئيسي">
+    <a href="#vision">الرؤية</a><a href="#architecture">البنية</a><a href="#principles">المبادئ</a>
+    <a href="https://github.com/samiaymen107-rgb/AYHEM" target="_blank" rel="noreferrer">المصدر المفتوح ↗</a>
+  </nav>
+</header>
+<main>
+  <section class="hero">
+    <div class="eyebrow"><span class="pulse"></span> مشروع بحث وتطوير مستقل</div>
+    <h1>ذاكرة تفهم الماضي،<br /><em>وتتعلم لصناعة الغد.</em></h1>
+    <p class="intro">أيهم مشروع لبناء عقل رقمي متطور؛ يحفظ المعرفة بمصادرها، يربط التجارب عبر الزمن، يحلل الأدلة، ويختبر استنتاجاته — مع استقلالية منضبطة وأمان تحت سيطرة المؤسس.</p>
+    <div class="actions"><a class="primary" href="#architecture">اكتشف البنية</a><a class="secondary" href="https://github.com/samiaymen107-rgb/AYHEM_WEB/blob/main/AYHEM_PROGRESS_DASHBOARD.html" target="_blank" rel="noreferrer">متابعة التطوير ↗</a></div>
+    <div class="note">الحالة الحالية: مرحلة بناء النواة واختبارها — ليست خدمة إنتاجية بعد.</div>
+  </section>
+  <section id="vision" class="vision">
+    <div><div class="eyebrow">لماذا أيهم؟</div><h2>أكثر من أرشيف للذكريات</h2></div>
+    <p>بدأت الفكرة من قيمة الذاكرة الإنسانية وأثر فقدانها. الطموح هو تحويل المعرفة والتجارب إلى سجل مترابط قابل للفهم والمراجعة والتعلم، لا مجرد تخزين ملفات وملاحظات.</p>
+  </section>
+  <section id="architecture" class="section">
+    <div class="section-heading"><div class="eyebrow">منظومة متعددة الطبقات</div><h2>بنية أيهم</h2><p>كل طبقة لها وظيفة وحدود واضحة، وتتكامل مع بقية النظام عبر واجهات موثقة.</p></div>
+    <div class="grid">
+      <article class="module"><b>01 / MEMORY</b><h3>ذاكرة موثوقة</h3><p>مصدر وتاريخ ودرجة ثقة لكل معلومة، مع حفظ النسخ والتصحيحات دون محو الأصل.</p></article>
+      <article class="module"><b>02 / REASONING</b><h3>تحليل واستدلال</h3><p>ربط الأحداث، كشف التعارضات، بناء الفرضيات، وقياس جودة النتائج.</p></article>
+      <article class="module"><b>03 / LEARNING</b><h3>تعلم قابل للقياس</h3><p>مقارنة التوقعات بالنتائج الفعلية وتحسين الأداء بناءً على الاختبار.</p></article>
+      <article class="module"><b>04 / AUTONOMY</b><h3>استقلالية منضبطة</h3><p>تنفيذ المهام الآمنة تلقائياً، وعزل التغييرات، وطلب الموافقة عند القرارات الحساسة.</p></article>
+      <article class="module"><b>05 / BLACK BOX</b><h3>صندوق الأسرار</h3><p>مفاتيح الخادم خارج الشيفرة والواجهة، بصلاحيات محدودة وسجل تدقيق.</p></article>
+      <article class="module"><b>06 / CONTINUITY</b><h3>استمرارية التشغيل</h3><p>نسخ احتياطي قابل للاسترجاع، مراقبة، اختبارات، وإيقاف آمن عند الخلل.</p></article>
+    </div>
+  </section>
+  <section id="principles" class="principles">
+    <div class="eyebrow">قواعد لا نتنازل عنها</div><h2>الاستقلالية لا تعني غياب الرقابة</h2>
+    <ul>
+      <li><span>✓</span> لا حذف نهائي ولا نشر حساس دون موافقة المؤسس.</li>
+      <li><span>✓</span> لا صلاحيات ذاتية ولا تنفيذ لأوامر مجهولة.</li>
+      <li><span>✓</span> لا تتحول الفرضيات أو التوقعات إلى حقائق.</li>
+      <li><span>✓</span> لا أسرار في GitHub أو ملفات المتصفح.</li>
+      <li><span>✓</span> كل تغيير يمر بالاختبار والمراجعة قبل الإنتاج.</li>
+    </ul>
+  </section>
+</main>
+<footer><div class="brand">AYHEM<span>Σ</span></div><p>بُنيت الفكرة لتصون الذاكرة، وتفتح طريقاً لمعرفة تتطور بمسؤولية.</p><small>AYHEM · Digital Cognitive System · 2026</small></footer>
+</body>
 </html>
+<style>
+:global(*){box-sizing:border-box}:global(html){scroll-behavior:smooth;background:#0b1220}:global(body){margin:0;color:#e8edf7;background:#0b1220;font-family:Tahoma,Arial,sans-serif;line-height:1.8}:global(a){color:inherit}
+.topbar{min-height:76px;padding:0 clamp(20px,7vw,100px);display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff14;background:#0b1220ef}
+.brand{color:#f4f6fb;font-size:1.35rem;font-weight:900;letter-spacing:2px;text-decoration:none;direction:ltr}.brand span{color:#d6b56d;margin-left:5px}
+nav{display:flex;gap:clamp(12px,3vw,32px);align-items:center;font-size:.88rem;color:#aab5c8}nav a{text-decoration:none}nav a:hover{color:#e5c77f}
+main{width:min(1120px,calc(100% - 40px));margin:auto;padding:0 0 80px}.hero{padding:clamp(90px,14vw,160px) 0 100px;max-width:850px}
+.eyebrow{color:#d8bb78;font-size:.82rem;font-weight:700;letter-spacing:.04em}.pulse{display:inline-block;width:8px;height:8px;border-radius:50%;background:#d8bb78;margin-left:8px;box-shadow:0 0 14px #d8bb7888}
+h1{margin:22px 0;font-size:clamp(2.7rem,7vw,5.5rem);line-height:1.2;letter-spacing:-.04em;color:#f7f8fb}h1 em{color:#d8bb78;font-style:normal}
+.intro{color:#aeb9ca;font-size:clamp(1rem,2vw,1.22rem);max-width:740px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}.actions a{padding:11px 22px;border-radius:8px;font-weight:700;text-decoration:none}
+.primary{background:#d8bb78;color:#101827}.secondary{border:1px solid #526078;color:#e8edf7}.note{margin-top:28px;color:#8190a8;font-size:.82rem}
+.vision{display:grid;grid-template-columns:1fr 1.5fr;gap:50px;padding:55px 0;border-top:1px solid #ffffff18;border-bottom:1px solid #ffffff18;align-items:start}
+h2{margin:8px 0 14px;font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.3}.vision p,.section-heading p{margin:0;color:#aeb9ca}
+.section{padding:100px 0}.section-heading{max-width:650px;margin-bottom:35px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.module{padding:25px;border:1px solid #ffffff18;border-radius:12px;background:linear-gradient(145deg,#141f32,#0e1727)}.module b{color:#d8bb78;font-size:.72rem;letter-spacing:.08em}
+.module h3{margin:15px 0 8px;font-size:1.15rem;color:#f3f5f9}.module p{margin:0;color:#9eabc0;font-size:.9rem}
+.principles{padding:55px clamp(22px,5vw,55px);border:1px solid #d8bb7838;border-radius:16px;background:#111c2d}.principles h2{max-width:650px}
+.principles ul{padding:0;margin:25px 0 0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:14px 25px;color:#b8c2d1}.principles li span{color:#d8bb78;margin-left:9px}
+footer{text-align:center;padding:55px 20px;border-top:1px solid #ffffff18;color:#8997ad}footer p{margin:10px 0}footer small{font-size:.75rem}
+@media(max-width:760px){.topbar{align-items:flex-start;padding-top:15px;padding-bottom:15px;gap:12px;flex-direction:column}nav{flex-wrap:wrap;gap:10px 18px}.vision{grid-template-columns:1fr;gap:12px}.grid{grid-template-columns:1fr}.principles ul{grid-template-columns:1fr}}
+</style>
